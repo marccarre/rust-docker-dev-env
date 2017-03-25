@@ -49,6 +49,10 @@ and then either re-use in other images or run one of the below commands:
         Compiling hello v1.0.0 (file:///home/rust)
         Finished dev [unoptimized + debuginfo] target(s) in 1.97 secs
 
+### Sample project
+
+See: https://github.com/marccarre/rust-sample-project
+
 ### Build & Release
 
 #### Pre-requisites
