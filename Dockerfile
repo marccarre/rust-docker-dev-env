@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
     rm -fr rust-"$RUST_VERSION"-"$RUST_CPU"-"$RUST_ARCH"* && \
     apt-get --purge -y autoremove curl && \
     rm -rf /var/lib/apt/lists/*
+COPY ./build-continuously.sh /home/rust/build-continuously.sh
 VOLUME /home/rust
 WORKDIR /home/rust
 ENTRYPOINT ["/bin/bash"]
