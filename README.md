@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/marccarre/rust-docker-dev-env.svg?branch=master)](https://travis-ci.org/marccarre/rust-docker-dev-env)
-[![Docker Pulls](https://img.shields.io/docker/pulls/marccarre/rust-dev-env.svg?maxAge=604800)](https://hub.docker.com/r/marccarre/rust-dev-env/)
+[![Docker Pulls on Quay](https://quay.io/repository/marccarre/rust-dev-env/status "Docker Repository on Quay")](https://quay.io/repository/marccarre/rust-dev-env)
+[![Docker Pulls on DockerHub](https://img.shields.io/docker/pulls/marccarre/rust-dev-env.svg?maxAge=604800)](https://hub.docker.com/r/marccarre/rust-dev-env/)
 
 # rust-docker-dev-env
 Rust development environment based on Docker.
