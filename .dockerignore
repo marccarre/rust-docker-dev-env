@@ -1,0 +1,6 @@
+# None of the below files should make it to the Docker image:
+.gitignore
+.travis.yml
+LICENSE
+Makefile
+README.md
