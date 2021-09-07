@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:bullseye-slim
 ARG rust_version
 ENV RUST_VERSION ${rust_version}
 ENV RUST_ARCH unknown-linux-gnu
@@ -9,8 +9,9 @@ LABEL maintainer "Marc Carre <carre.marc@gmail.com>"
 RUN apt-get update && apt-get install -y \
         curl \
         gcc \
+	gpg \
         inotify-tools && \
-    gpg --keyserver pgp.mit.edu --recv-key 85AB96E6FA1BE5FE && \
+    gpg --keyserver keyserver.ubuntu.com --recv-key 85AB96E6FA1BE5FE && \
     curl -fsSO https://static.rust-lang.org/dist/rust-"$RUST_VERSION"-"$RUST_CPU"-"$RUST_ARCH".tar.gz.asc && \
     curl -fsSO https://static.rust-lang.org/dist/rust-"$RUST_VERSION"-"$RUST_CPU"-"$RUST_ARCH".tar.gz && \
     gpg --verify rust-"$RUST_VERSION"-"$RUST_CPU"-"$RUST_ARCH".tar.gz.asc && \
